@@ -15,7 +15,7 @@ html {
 
 body {
   font-family: "Segoe UI", system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background: radial-gradient(circle at 20% 20%, #1a1f3a, #0b0d18);
+  background: radial-gradient(circle at 20% 20%, #1a2a1e, #0d1210);
   color: #d4d4d4;
   line-height: 1.6;
   min-height: 100vh;
@@ -33,7 +33,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: rgba(11, 13, 24, 0.85);
+  background: rgba(13, 18, 16, 0.85);
   backdrop-filter: blur(10px);
   z-index: 100;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -42,7 +42,7 @@ body {
 .nav-logo {
   font-size: 1rem;
   font-weight: 700;
-  color: #7eb8da;
+  color: #6b9e78;
 }
 
 .nav-links {
@@ -83,8 +83,8 @@ body {
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.15em;
-  color: #7eb8da;
-  border: 1px solid rgba(126, 184, 218, 0.3);
+  color: #6b9e78;
+  border: 1px solid rgba(107, 158, 120, 0.3);
   border-radius: 20px;
   padding: 0.3em 1em;
   margin-bottom: 1.5rem;
@@ -126,12 +126,12 @@ body {
 }
 
 .btn-primary {
-  background: #7eb8da;
-  color: #0b0d18;
+  background: #6b9e78;
+  color: #0d1210;
 }
 
 .btn-primary:hover {
-  background: #9acbe6;
+  background: #82b48e;
 }
 
 .btn-outline {
@@ -192,7 +192,7 @@ li {
 
 /* ── Links ─────────────────────────────────────────── */
 a {
-  color: #7eb8da;
+  color: #6b9e78;
   text-decoration: none;
 }
 
@@ -206,7 +206,7 @@ a:hover {
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.15em;
-  color: #7eb8da;
+  color: #6b9e78;
   margin-bottom: 0.5rem;
 }
 
@@ -241,15 +241,15 @@ a:hover {
 }
 
 .accent-cyan {
-  background: #7eb8da;
+  background: #6b9e78;
 }
 
 .accent-purple {
-  background: #a78bfa;
+  background: #c4a265;
 }
 
 .accent-green {
-  background: #6ee7b7;
+  background: #7bb89e;
 }
 
 .card h3 {
@@ -298,7 +298,7 @@ a:hover {
   display: block;
   font-size: 1rem;
   font-weight: 700;
-  color: #7eb8da;
+  color: #6b9e78;
   margin-bottom: 0.5rem;
 }
 
