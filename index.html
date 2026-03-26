@@ -9,36 +9,74 @@
 </head>
 <body>
 
-  <header class="site-header">
+  <nav class="nav-bar">
+    <span class="nav-logo">Pineforge Studios</span>
+    <div class="nav-links">
+      <a href="#apps">Apps</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
     <img src="pinecone_logo.png" alt="Pineforge Studios logo" class="site-logo">
+    <span class="hero-tag">INDIE GAME & APP STUDIO</span>
     <h1 class="studio-name">Pineforge Studios</h1>
-    <p class="tagline">Independent software studio building focused mobile experiences.</p>
+    <p class="tagline">Building games and tools for adventure and imagination.</p>
+    <div class="hero-buttons">
+      <a href="#apps" class="btn btn-primary">View Apps</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    </div>
   </header>
 
   <main>
-    <section class="section">
-      <h2>Our Work</h2>
+    <section class="section" id="apps">
+      <span class="section-label">OUR APPS</span>
+      <h2>What We've Built</h2>
 
-      <h3>Vector Drift</h3>
-      <p>A neon arcade survival game built for fast reflexes and clean gameplay.</p>
-      <p><a href="#">Google Play</a> &middot; <a href="vectordrift/privacy.html">Privacy Policy</a></p>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-accent accent-cyan"></div>
+          <h3>Vector Drift</h3>
+          <p>A neon arcade survival game built for fast reflexes and clean gameplay.</p>
+          <div class="card-links">
+            <a href="#">Google Play</a>
+            <a href="vectordrift/privacy.html">Privacy Policy</a>
+          </div>
+        </div>
 
-      <h3>Fablewyn</h3>
-      <p>Explore handcrafted interactive stories and generate new ones with AI — where every choice shapes the narrative.</p>
-      <p><a href="fablewyn/privacy.html">Privacy Policy</a></p>
+        <div class="card">
+          <div class="card-accent accent-purple"></div>
+          <h3>Fablewyn</h3>
+          <p>Explore handcrafted interactive stories and generate new ones with AI — where every choice shapes the narrative.</p>
+          <div class="card-links">
+            <a href="fablewyn/privacy.html">Privacy Policy</a>
+          </div>
+        </div>
 
-      <h3>Trailbound <span class="badge">Coming Soon</span></h3>
-      <p>A purpose-built navigation and mapping experience for outdoor exploration — designed for clarity, reliability, and real-world use.</p>
+        <div class="card">
+          <div class="card-accent accent-green"></div>
+          <h3>Trailbound <span class="badge">Coming Soon</span></h3>
+          <p>A purpose-built navigation and mapping experience for outdoor exploration — designed for clarity, reliability, and real-world use.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="section">
-      <h2>Contact</h2>
+    <section class="section" id="about">
+      <span class="section-label">ABOUT</span>
+      <h2>Why Pineforge?</h2>
+      <p>Pineforge Studios is an independent developer focused on building simple, user-friendly mobile experiences — from games to outdoor tools. We keep things small, focused, and built with care.</p>
+    </section>
+
+    <section class="section" id="contact">
+      <span class="section-label">CONTACT</span>
+      <h2>Get in Touch</h2>
       <p>For inquiries, reach us at <a href="mailto:pineforge.dev@gmail.com">pineforge.dev@gmail.com</a></p>
     </section>
-
   </main>
 
   <footer class="site-footer">
+    <span class="footer-name">Pineforge Studios</span>
     <p>&copy; 2026 Pineforge Studios, LLC &middot; <a href="privacy.html">Privacy Policy</a></p>
   </footer>
 
