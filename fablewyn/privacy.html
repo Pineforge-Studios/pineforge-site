@@ -16,24 +16,16 @@
 
   <main>
     <section class="section">
-      <h2>Overview</h2>
-      <p>Fablewyn is a narrative game that generates interactive stories using artificial intelligence. This privacy policy explains what data the app does and does not collect when you use it.</p>
+      <p><strong>Effective date:</strong> July 11, 2026<br>
+      <strong>Developer:</strong> Pineforge Studios</p>
+      <h2>The Short Version</h2>
+      <p>Fablewyn has no accounts, no ads, no analytics, and no user database. Your reading progress stays on your device. The app talks to the internet for exactly two things — downloading narration audio and generating AI stories — and neither involves your name, email, or any personal profile.</p>
     </section>
 
     <section class="section">
       <h2>Information We Collect</h2>
       <p>Fablewyn does not require accounts and does not collect personal information such as your name, email address, or contact information. The app does not maintain any user database or cloud profile system.</p>
-    </section>
-
-    <section class="section">
-      <h2>AI Story Generation</h2>
-      <p>When you generate a new story, the app sends a request to an external AI service operated by Anthropic to generate story content. This request may include:</p>
-      <ul>
-        <li>Story prompts</li>
-        <li>Generation parameters (such as story length)</li>
-        <li>Narrative context required to produce the story</li>
-      </ul>
-      <p>Your device's IP address may be visible to Anthropic as part of the network request, as is standard for internet communication. Anthropic processes this request according to their own privacy and data policies. Fablewyn does not store or control data processed by Anthropic's systems.</p>
+      <p>To prevent abuse of the AI generation feature, the app uses a <strong>randomly generated, anonymous device token</strong> (provided by Google Firebase). This token is not derived from and cannot be linked to your identity, and it is used only to enforce fair-use limits on story generation.</p>
     </section>
 
     <section class="section">
@@ -41,26 +33,54 @@
       <p>Fablewyn stores the following information only on your device:</p>
       <ul>
         <li>Generated stories</li>
-        <li>Story progress</li>
+        <li>Story progress and visited scenes</li>
         <li>Unlocked endings</li>
-        <li>Game preferences</li>
+        <li>AI generation count</li>
+        <li>Purchase state</li>
+        <li>App preferences</li>
+        <li>Downloaded narration audio (cached so it isn't re-downloaded)</li>
       </ul>
-      <p>This information is stored locally to allow you to continue stories and track your progress. Fablewyn does not upload or synchronize this data to any server. If you uninstall the app, this locally stored data may be deleted.</p>
+      <p>Fablewyn does not upload or synchronize this data to any server. If you uninstall the app, this locally stored data is deleted.</p>
+    </section>
+
+    <section class="section">
+      <h2>AI Story Generation</h2>
+      <p>Fablewyn's story generator works from <strong>selections you make in the app</strong> — genre, style, and story type. There is no free-text prompt; nothing you write leaves your device, because the app never asks you to write anything.</p>
+      <p>When you generate a story, your selections are sent to a server operated by Pineforge Studios (running on Google Firebase), which relays the request to Anthropic's Claude AI to produce the story text. This design keeps API credentials off your device and lets us enforce generation limits without requiring an account.</p>
+      <p>These requests include:</p>
+      <ul>
+        <li>Your story selections and generation parameters</li>
+        <li>The anonymous device token described above</li>
+      </ul>
+      <p>Our server keeps <strong>basic request records</strong> (the anonymous token and request timestamps) for rate limiting and abuse prevention. These records contain no personal information and are not used for advertising, profiling, or analytics.</p>
+      <p>As with any internet request, your device's IP address is technically visible to the servers involved (Google and Anthropic) while the request is processed. Anthropic processes generation requests under its own privacy policy; Fablewyn does not store the stories on any server — the finished story is returned to your device and lives only there.</p>
+    </section>
+
+    <section class="section">
+      <h2>Narration Audio</h2>
+      <p>Story narration is downloaded from Google Cloud Storage the first time you play a story (by default over Wi-Fi only; you can allow mobile data in the app's settings). This is an ordinary file download — no account, token, or personal information is attached to it — and the audio is cached on your device so it is only downloaded once. As with any download, your IP address is visible to Google's servers as part of standard internet communication.</p>
+      <p>Narration audio is produced by Pineforge Studios ahead of time using ElevenLabs voice technology. The app itself never communicates with ElevenLabs, and no user data is ever sent to them.</p>
+    </section>
+
+    <section class="section">
+      <h2>In-App Purchases</h2>
+      <p>Fablewyn offers an optional premium subscription (billed monthly or annually) that unlocks premium narration, story packs, and a monthly allotment of AI story generations. Subscriptions are processed entirely by Google Play. The developer does not receive or store payment information.</p>
+      <p>The app may receive confirmation from Google Play that a purchase has been completed in order to unlock premium features. Your premium status is stored on your device, not on our servers.</p>
     </section>
 
     <section class="section">
       <h2>Analytics and Tracking</h2>
-      <p>Fablewyn currently does not use analytics, tracking tools, advertising identifiers, or behavioral monitoring. The app does not track how you play stories or collect usage metrics.</p>
+      <p>Fablewyn does not use analytics, tracking tools, advertising identifiers, or behavioral monitoring. The app does not track how you play stories or collect usage metrics.</p>
     </section>
 
     <section class="section">
       <h2>Data Security</h2>
-      <p>Because story data and progress are stored locally on your device, you retain control over that data. No central database of player information exists. However, no software system can guarantee absolute security. Use of the app is at your own discretion.</p>
+      <p>All network communication (narration downloads and AI generation requests) uses encrypted connections (HTTPS). Because story data and progress are stored locally on your device, you retain control over that data. Fablewyn does not maintain a central database of user information.</p>
     </section>
 
     <section class="section">
       <h2>Children's Privacy</h2>
-      <p>Fablewyn is not directed at children under the age of 13. Because stories are generated by AI, content may vary and is not individually reviewed.</p>
+      <p>Fablewyn is not directed at children under the age of 13. Because some stories are generated by AI, content may vary and is not individually reviewed.</p>
     </section>
 
     <section class="section">
@@ -69,19 +89,8 @@
     </section>
 
     <section class="section">
-      <h2>AI-Generated Content Disclosure</h2>
-      <p>Stories in Fablewyn are created by the Claude AI model provided by Anthropic. Because the stories are generated automatically:</p>
-      <ul>
-        <li>Story quality may vary</li>
-        <li>Content may occasionally contain errors, inconsistencies, or unexpected themes</li>
-        <li>Stories are not individually reviewed or edited by a human</li>
-      </ul>
-      <p>To help maintain a playable experience, generated stories are automatically validated by the app to ensure they follow a correct interactive structure. However, narrative content itself is not moderated beyond automated safeguards.</p>
-    </section>
-
-    <section class="section">
       <h2>Contact</h2>
-      <p>If you have questions about this privacy policy, you may contact the developer at <a href="mailto:hello@pineforgestudios.com">hello@pineforgestudios.com</a></p>
+      <p>If you have questions about this privacy policy, contact Pineforge Studios at: <strong><a href="mailto:pineforge.dev@gmail.com">pineforge.dev@gmail.com</a></strong></p>
     </section>
   </main>
 
