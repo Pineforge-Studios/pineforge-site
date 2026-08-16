@@ -17,27 +17,24 @@
 
   <main>
     <section class="section">
-      <p><strong>Effective date:</strong> July 11, 2026<br>
+      <p><strong>Effective date:</strong> August 16, 2026<br>
       <strong>Developer:</strong> Pineforge Studios</p>
       <h2>The Short Version</h2>
-      <p>Fablewyn has no accounts, no ads, no analytics, and no user database. Your reading progress stays on your device. The app talks to the internet for exactly two things — downloading narration audio and generating AI stories — and neither involves your name, email, or any personal profile.</p>
+      <p>Fablewyn has no accounts, no ads, no analytics, and no user database. Your reading progress stays on your device. The app talks to the internet for exactly one thing — downloading narration audio — and that download carries no name, email, account, or identifier of any kind.</p>
     </section>
 
     <section class="section">
       <h2>Information We Collect</h2>
-      <p>Fablewyn does not require accounts and does not collect personal information such as your name, email address, or contact information. The app does not maintain any user database or cloud profile system.</p>
-      <p>To prevent abuse of the AI generation feature, the app uses a <strong>randomly generated, anonymous device token</strong> (provided by Google Firebase). This token is not derived from and cannot be linked to your identity, and it is used only to enforce fair-use limits on story generation.</p>
+      <p><strong>None.</strong> Fablewyn does not require accounts and does not collect personal information such as your name, email address, or contact information. There is no user database, no cloud profile, no login, and no identifier that follows you between sessions or devices.</p>
     </section>
 
     <section class="section">
       <h2>Local Storage</h2>
       <p>Fablewyn stores the following information only on your device:</p>
       <ul>
-        <li>Generated stories</li>
         <li>Story progress and visited scenes</li>
         <li>Unlocked endings</li>
-        <li>AI generation count</li>
-        <li>Purchase state</li>
+        <li>Purchase state (which stories and packs you own)</li>
         <li>App preferences</li>
         <li>Downloaded narration audio (cached so it isn't re-downloaded)</li>
       </ul>
@@ -45,43 +42,31 @@
     </section>
 
     <section class="section">
-      <h2>AI Story Generation</h2>
-      <p>Fablewyn's story generator works from <strong>selections you make in the app</strong> — genre, style, and story type. There is no free-text prompt; nothing you write leaves your device, because the app never asks you to write anything.</p>
-      <p>When you generate a story, your selections are sent to a server operated by Pineforge Studios (running on Google Firebase), which relays the request to Anthropic's Claude AI to produce the story text. This design keeps API credentials off your device and lets us enforce generation limits without requiring an account.</p>
-      <p>These requests include:</p>
-      <ul>
-        <li>Your story selections and generation parameters</li>
-        <li>The anonymous device token described above</li>
-      </ul>
-      <p>Our server keeps <strong>basic request records</strong> (the anonymous token and request timestamps) for rate limiting and abuse prevention. These records contain no personal information and are not used for advertising, profiling, or analytics.</p>
-      <p>As with any internet request, your device's IP address is technically visible to the servers involved (Google and Anthropic) while the request is processed. Anthropic processes generation requests under its own privacy policy; Fablewyn does not store the stories on any server — the finished story is returned to your device and lives only there.</p>
-    </section>
-
-    <section class="section">
       <h2>Narration Audio</h2>
-      <p>Story narration is downloaded from Google Cloud Storage the first time you play a story (by default over Wi-Fi only; you can allow mobile data in the app's settings). This is an ordinary file download — no account, token, or personal information is attached to it — and the audio is cached on your device so it is only downloaded once. As with any download, your IP address is visible to Google's servers as part of standard internet communication.</p>
+      <p>The stories included with the app come with their narration already built in, so they play with no internet connection at all. Narration for the remaining stories is downloaded from Google Cloud Storage the first time you play them (by default over Wi-Fi only; you can allow mobile data in the app's settings). The audio is cached on your device so it is only downloaded once.</p>
+      <p>This is an ordinary file download — no account, token, or personal information is attached to it. As with any download, your device's IP address is visible to Google's servers as part of standard internet communication. Nothing about which story you opened is recorded or associated with you.</p>
       <p>Narration audio is produced by Pineforge Studios ahead of time using ElevenLabs voice technology. The app itself never communicates with ElevenLabs, and no user data is ever sent to them.</p>
     </section>
 
     <section class="section">
       <h2>In-App Purchases</h2>
-      <p>Fablewyn offers an optional premium subscription (billed monthly or annually) that unlocks premium narration, story packs, and a monthly allotment of AI story generations. Subscriptions are processed entirely by Google Play. The developer does not receive or store payment information.</p>
-      <p>The app may receive confirmation from Google Play that a purchase has been completed in order to unlock premium features. Your premium status is stored on your device, not on our servers.</p>
+      <p>Fablewyn offers optional one-time purchases that permanently unlock additional stories and story packs. There is no subscription and nothing recurring. Purchases are processed entirely by Google Play — the developer does not receive or store payment information.</p>
+      <p>The app receives confirmation from Google Play that a purchase has been completed in order to unlock the content. What you own is stored on your device and with your Google Play account, not on any server operated by Pineforge Studios. Restoring purchases on a new device is handled by Google Play.</p>
     </section>
 
     <section class="section">
       <h2>Analytics and Tracking</h2>
-      <p>Fablewyn does not use analytics, tracking tools, advertising identifiers, or behavioral monitoring. The app does not track how you play stories or collect usage metrics.</p>
+      <p>Fablewyn does not use analytics, tracking tools, advertising identifiers, crash reporting, or behavioral monitoring. The app does not track how you play stories or collect usage metrics.</p>
     </section>
 
     <section class="section">
       <h2>Data Security</h2>
-      <p>All network communication (narration downloads and AI generation requests) uses encrypted connections (HTTPS). Because story data and progress are stored locally on your device, you retain control over that data. Fablewyn does not maintain a central database of user information.</p>
+      <p>Narration downloads use encrypted connections (HTTPS). Because story data and progress are stored locally on your device, you retain control over that data. Fablewyn does not maintain a central database of user information.</p>
     </section>
 
     <section class="section">
       <h2>Children's Privacy</h2>
-      <p>Fablewyn is not directed at children under the age of 13. Because some stories are generated by AI, content may vary and is not individually reviewed.</p>
+      <p>Fablewyn is not directed at children under the age of 13. The app collects no personal information from anyone, including children.</p>
     </section>
 
     <section class="section">
