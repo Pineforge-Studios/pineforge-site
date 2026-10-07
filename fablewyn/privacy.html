@@ -17,15 +17,15 @@
 
   <main>
     <section class="section">
-      <p><strong>Effective date:</strong> August 16, 2026<br>
+      <p><strong>Effective date:</strong> October 7, 2026<br>
       <strong>Developer:</strong> Pineforge Studios</p>
       <h2>The Short Version</h2>
-      <p>Fablewyn has no accounts, no ads, no analytics, and no user database. Your reading progress stays on your device. The app talks to the internet for exactly one thing — downloading narration audio — and that download carries no name, email, account, or identifier of any kind.</p>
+      <p>Fablewyn has no accounts, no ads, no analytics, and no user database. Your reading progress is stored on your device. The app goes online for two things only: downloading narration audio, and talking to Google Play when you buy or restore a purchase. Neither carries your name, your email, or an account of ours.</p>
     </section>
 
     <section class="section">
       <h2>Information We Collect</h2>
-      <p><strong>None.</strong> Fablewyn does not require accounts and does not collect personal information such as your name, email address, or contact information. There is no user database, no cloud profile, no login, and no identifier that follows you between sessions or devices.</p>
+      <p><strong>None.</strong> Fablewyn does not require accounts and does not collect personal information such as your name, email address, or contact information. There is no user database, no cloud profile, no login, and no Fablewyn identifier that follows you between sessions or devices.</p>
     </section>
 
     <section class="section">
@@ -38,20 +38,25 @@
         <li>App preferences</li>
         <li>Downloaded narration audio (cached so it isn't re-downloaded)</li>
       </ul>
-      <p>Fablewyn does not upload or synchronize this data to any server. If you uninstall the app, this locally stored data is deleted.</p>
+      <p>Fablewyn never sends this data to Pineforge Studios or to any server we operate. If Android backup is turned on for your phone, Android may include your progress, endings, purchase state and preferences in the backup it keeps in your own Google account, so they can be restored on a new device. Downloaded narration audio is never included. That backup is managed by Android and Google under your account settings, and Pineforge Studios cannot see it. Uninstalling the app deletes the data on your device; a backup in your Google account follows Google's own rules.</p>
     </section>
 
     <section class="section">
       <h2>Narration Audio</h2>
       <p>The stories included with the app come with their narration already built in, so they play with no internet connection at all. Narration for the remaining stories is downloaded from Google Cloud Storage the first time you play them (by default over Wi-Fi only; you can allow mobile data in the app's settings). The audio is cached on your device so it is only downloaded once.</p>
-      <p>This is an ordinary file download — no account, token, or personal information is attached to it. As with any download, your device's IP address is visible to Google's servers as part of standard internet communication. Nothing about which story you opened is recorded or associated with you.</p>
+      <p>This is an ordinary file download — no account, token, or personal information is attached to it. Like any app using Google's Firebase download service, the request names the app and the version of the download software, never you. As with any download, your device's IP address is visible to Google's servers as part of standard internet communication. Nothing about which story you opened is recorded or associated with you.</p>
       <p>Narration audio is produced by Pineforge Studios ahead of time using ElevenLabs voice technology. The app itself never communicates with ElevenLabs, and no user data is ever sent to them.</p>
     </section>
 
     <section class="section">
       <h2>In-App Purchases</h2>
       <p>Fablewyn offers optional one-time purchases that permanently unlock additional stories and story packs. There is no subscription and nothing recurring. Purchases are processed entirely by Google Play — the developer does not receive or store payment information.</p>
-      <p>The app receives confirmation from Google Play that a purchase has been completed in order to unlock the content. What you own is stored on your device and with your Google Play account, not on any server operated by Pineforge Studios. Restoring purchases on a new device is handled by Google Play.</p>
+      <p>The app receives confirmation from Google Play that a purchase has been completed in order to unlock the content. What you own is stored on your device and with your Google Play account, not on any server operated by Pineforge Studios. Restoring purchases on a new device is handled by Google Play. To show prices and confirm what you own, the app connects to Google Play when it starts and when you buy or restore a purchase; that exchange is governed by Google's privacy policy.</p>
+    </section>
+
+    <section class="section">
+      <h2>Nothing Else Goes Online</h2>
+      <p>Fablewyn makes no other internet requests. Its fonts, and the narration for the stories included with the app, are built into the app itself.</p>
     </section>
 
     <section class="section">
@@ -61,7 +66,7 @@
 
     <section class="section">
       <h2>Data Security</h2>
-      <p>Narration downloads use encrypted connections (HTTPS). Because story data and progress are stored locally on your device, you retain control over that data. Fablewyn does not maintain a central database of user information.</p>
+      <p>Narration downloads and Google Play purchases use encrypted connections (HTTPS). Because story data and progress are stored locally on your device, you retain control over that data. Fablewyn does not maintain a central database of user information.</p>
     </section>
 
     <section class="section">
